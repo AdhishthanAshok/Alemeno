@@ -11,9 +11,9 @@ const StudentDashboard = () => {
   };
 
   const getProgressBarColor = (progress) => {
-    if (progress < 30) return "bg-red-500"; // Red for low progress
-    if (progress < 70) return "bg-yellow-500"; // Yellow for medium progress
-    return "bg-green-500"; // Green for high progress
+    if (progress < 30) return "bg-red-500";
+    if (progress < 70) return "bg-yellow-500";
+    return "bg-green-500";
   };
   return (
     <div className="p-6 bg-gray-50 min-h-screen">

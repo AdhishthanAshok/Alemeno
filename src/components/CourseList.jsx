@@ -13,12 +13,10 @@ function CourseList() {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    // Load courses from local storage if available
     const savedCourses = localStorage.getItem("courses");
     if (savedCourses) {
       dispatch(initializeCourses(JSON.parse(savedCourses)));
     } else {
-      // Fetch courses from API if not available in local storage
       fetch("https://mocki.io/v1/90a657ad-9192-4b5c-b9ad-dfc0df22bbd8")
         .then((response) => response.json())
         .then((data) => {
@@ -42,7 +40,7 @@ function CourseList() {
   );
 
   const handleLikeClick = (courseId) => {
-    // Find the course and increment likes
+    // course and increment likes
     const course = courses.find((course) => course.id === courseId);
     if (course) {
       const updatedLikes = (course.likes || 0) + 1;

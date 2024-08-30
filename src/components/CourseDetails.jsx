@@ -16,7 +16,7 @@ const CourseDetails = () => {
   }
 
   const handleToggleSyllabus = () => {
-    setIsSyllabusExpanded(!isSyllabusExpanded); // Toggle the expanded state
+    setIsSyllabusExpanded(!isSyllabusExpanded); // syllabus expansion controller
   };
 
   // Sort the syllabus items by week number
