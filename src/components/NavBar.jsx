@@ -12,6 +12,7 @@ const NavBar = () => {
           Home
         </Link>
       </div>
+      <div className="text-2xl">Alemeno</div>
       <div>
         <Link
           to="/dashboard"
